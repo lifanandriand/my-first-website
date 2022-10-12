@@ -2,7 +2,7 @@ export default  {
     card: [
       {
         id: 1,
-        icon: '/assets/fe.svg',
+        icon: './assets/fe.svg',
         title: 'Frontend',
         desc: 'Create Website and Responsive Website by HTML/CSS, React',
       },
