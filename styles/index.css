@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth ;
+}
+
+
+/* navbar */
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.box-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.box-nav .logo h1{
+    font-size: 30px;
+}
+
+#navbar {
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: #642FE1;
+}
+
+.menu {
+    display: flex;
+    column-gap: 30px;
+    list-style-type: none;
+    color: white;
+    font-weight: 700;
+}
+
+#navbar .container .box-nav .menu li a {
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#navbar .container .box-nav .menu li a:hover{
+    background-color: white;
+    color: #642FE1;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    color: white;
+}
+
+#navbar .container .box-nav .menu-bar{
+    display: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* hero */
+
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero .box-hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+#hero .box-hero .box:nth-child(2) img{
+    width: 100%;
+}
+
+#hero .box-hero .box:nth-child(1) h1{
+    color: #642FE1;
+    font-size: 3vw;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#hero .box-hero .box:nth-child(1) p{
+    line-height: 2;
+    color: black;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#hero .box-hero .box:nth-child(1) button {
+    width: 180px;
+    height: 50px;
+    background-color: #F6DC2A;
+    color: #642FE1;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+#hero .box-hero .box:nth-child(1) button a {
+    text-decoration: none;
+}
+
+#hero .box-hero .box:nth-child(1) button a:hover {
+    color: #642FE1;
+}
+
+#hero .box-hero .box:nth-child(1) button:hover {
+    background-color: #d0b928;
+}
+
+
+/* content */
+
+#content {
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+#content .container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+#content .box-profile{
+    background-color: #642FE1;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#content .box-profile img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#content .box-profile .desc-profile {
+    color: white;
+    margin-top: 20px;
+
+}
+
+#content .box-profile .desc-profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#content .box-profile .desc-profile p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#content .box-content  {
+    padding: 30px;
+}
+
+#content .box-content .title-content {
+    font-size: 30px;
+    color: #642FE1;
+    margin-bottom: 30px;
+}
+
+#content .box-content p{
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+/* Card */
+#card {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 90px; 
+}
+
+#card .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:1fr;
+    row-gap: 50px;
+    column-gap: 50px;
+    background-color: #642FE1;
+    padding: 100px 300px 100px 300px;
+}
+
+#card .container .box-card {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#card .container .box-card .card-head{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #F6DC2A;
+    display: flex;
+    justify-content: center;
+}
+
+#card .container .box-card .card-head img{
+    width: 60%;
+}
+
+#card .container .box-card .card-body h3{
+    color: #642FE1;
+}
+
+#card .container .box-card .card-body{
+    line-height: 30px;
+}
+
+#card .container .box-card .card-body p{
+    color: black;
+}
+
+
+/* Media Screen Laptop 1440px */
+@media screen and (max-width: 1440px) {
+    #card .container {
+        padding: 100px 144px;
+    }
+}
+
+
+/* Footer */
+
+#contact {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #F6DC2A;
+    display: flex;
+}
+
+#contact .container .box-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    gap: 50px;
+    
+}
+
+#contact .container .box-footer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #642FE1;
+}
+
+#contact .container .box-footer .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contact .container .box-footer .footer-menu img {
+    width: 100px;
+}
+
+/* Media Screen Laptop 1024px */
+@media screen and (max-width: 1024px) {
+    #content .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .container .box-content .title-content {
+        text-align: center;
+    }
+
+    #content .box-profile {
+        width: 80%;
+    }
+
+    #card .container {
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:2fr;
+        padding: 80px 102px 80px 102px;
+    }
+
+}
+
+
+/* Media Screen Tablet */
+@media screen and (max-width: 768px) {
+
+    #navbar .container .box-nav .menu-bar {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+        opacity: 0;
+        background-color: #642FE1;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-active {
+       opacity: 1;
+       top: 70px;
+       border-top: 1px solid white;
+        
+    }
+
+    #hero .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    #hero .box-hero .box:nth-child(1){
+        order: 2;
+        text-align: center;
+    }
+
+    #hero .box-hero .box:nth-child(2){
+        order: 1;
+        text-align: center;
+    }
+    
+    #hero .box-hero .box:nth-child(2) img{
+        width: 60vw;
+    }
+
+    #content .container .box-content {
+        padding: 0px;
+    }
+
+    #content .container .box-content .title-content {
+        font-size: 20px;
+    }
+
+    #content .container .box-content p {
+        font-size: 18px;
+    }
+
+    #card .container {
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:2fr;
+        padding: 50px 76px 50px 76px;
+        gap: 30px;
+    }
+
+    #card .container .box-card{
+        gap: 20px;
+    }
+
+    #card .conatiner .box-card .card-head{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* Media Screen Handphone L */
+@media screen and (max-width: 425px ) {
+    #hero .box-hero {
+        row-gap: 0px;
+        margin-top: 50px;
+    }
+
+    #hero .box-hero .box:nth-child(1) {
+       
+       height: 250px;
+    }
+
+    #hero .box-hero .box:nth-child(2) img{
+        width: 80vw;
+    }
+
+    #hero .box-hero .box:nth-child(1) h1{
+        font-size: 6vw;
+    }
+
+    #hero .box-hero .box:nth-child(1) p {
+        font-size: 16px;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        width: 150px;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #content .box-profile {
+        width: 100%;
+    }
+
+    #content .box-profile .desc-profile h2{
+        font-size: 18px;
+    }
+
+    #content .box-profile .desc-profile p{
+        font-size: 16px;
+    }
+
+    #content .container .box-content {
+        padding: 0px;
+    }
+
+    #content .container .box-content .title-content {
+        font-size: 20px;
+    }
+
+    #content .container .box-content p {
+        font-size: 16px;
+    }
+
+    #card .container {
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:2fr;
+        padding: 50px 76px 50px 76px;
+        gap: 30px;
+        padding: 30px 50px ;
+    }
+
+    #card .container .box-card .card-head{
+        width: 80px;
+        height: 80px;
+    }
+
+    #contact .container .box-footer{
+        padding: 50px;
+    }
+
+    #contact .container .box-footer p{
+        font-size: 16px;
+    }
+
+    #contact .container .box-footer .footer-menu img {
+        width: 50px;
+    }
+}
+ 
+
+/* Media Screen Handphone M */
+@media  screen and (max-width: 375px) {
+    #hero .box-hero {
+        row-gap: 0px;
+    }
+
+    #hero .container {
+        margin-bottom: 200px;
+    }
+
+    #hero .box-hero .box:nth-child(2) img{
+        width: 80vw;
+        padding-top: 50px;
+    }
+
+    #hero .box-hero .box:nth-child(1) h1{
+        font-size: 7vw;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        width: 120px;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #card .container .box-card{
+        padding: 20px 30px;
+    }
+
+    #contact .container .box-footer{
+        padding: 70px 20px 0px 20px;
+        gap: 20px;
+    }
+    
+}
+
+
+/* Media Screen Handphone S */
+@media screen and (max-width: 320px) {
+    #hero .box-hero {
+        row-gap: 0px;
+        margin-top: 0px;    }
+
+    #hero .container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #hero .box-hero .box {
+        height: 150px;
+    }
+
+    #hero .box-hero .box:nth-child(2) img{
+        width: 80vw;
+    }
+
+    #hero .box-hero .box:nth-child(1) h1{
+        font-size: 8vw;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        width: 100px;
+    }
+
+    #hero .box-hero .box:nth-child(1) button{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #hero .box-hero .box:nth-child(1) p {
+        font-size: 16px ;
+    }
+    #card .container {
+        padding: 20px 40px ;
+    }
+
+    #card .container .box-card{
+        padding: 10px 20px;
+    }
+}
+
+
+
